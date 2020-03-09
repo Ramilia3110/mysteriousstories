@@ -1,0 +1,60 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-weight: 100;
+  line-height: 1.9rem;
+  background-color: $bg-color-dark;
+  color: $text-color-light-2;
+  transition: all ease-out 0.8s;
+}
+
+.light-mode {
+  background-color: $bg-color-light;
+  color: $text-color-dark;
+}
+.container {
+  margin-top: 0;
+}
+
+@media (min-width: 992px) {
+  .container {
+    display: grid;
+    grid-template-rows:
+      [main-start]100vh repeat(2, 80vh) minmax(100vh, min-content) 100vh
+      [aside-start]min-content
+      [aside-end main-end];
+    grid-template-columns:
+      [all-start] minmax(3%, 1fr) [center-start] min-content
+      [center-end] minmax(3%, 1fr)
+      [all-end];
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    display: grid;
+    grid-template-rows:
+      [main-start]
+      100vh
+      repeat(2, 80vh)
+      minmax(100vh, min-content)
+      100vh
+      [main-end];
+    grid-template-columns:
+      [all-start full-start]
+      minmax(1%, 1fr) [center-start]
+      repeat(8, minmax(9%, min-content))
+      [center-end] minmax(1%, 1fr)
+      [full-end aside-start] 25% [aside-end all-end];
+  }
+}

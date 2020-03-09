@@ -1,0 +1,109 @@
+.aside-container {
+  max-width: 82rem;
+  margin: 1.5rem auto;
+  padding: 0 1.25rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+  flex-wrap: wrap;
+}
+.right-col {
+  text-align: center;
+  margin-top: 2.5rem;
+  order: 1;
+  h1 {
+    font-size: 2.3rem;
+  }
+  h4 {
+    margin-top: 1.5rem;
+  }
+}
+.form {
+  @include flexCenter(column);
+  flex-wrap: wrap;
+  margin: 1.5rem auto;
+  &__input-email {
+    flex: 1;
+    padding: 0.8rem 2.5rem;
+    border: none;
+    font-weight: 500;
+    outline: none;
+    border-radius: 3rem;
+    min-width: 13rem;
+    margin-bottom: 1.2rem;
+  }
+  &__button {
+    padding: 0.8rem 2.5rem;
+    font-size: 1rem;
+    border: none;
+    color: $text-color-light-2;
+    background-color: $text-color-light;
+    font-weight: 500;
+    outline: none;
+    border-radius: 3rem;
+    min-width: 13rem;
+    cursor: pointer;
+    transition: opacity 0.3s linear;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
+
+.left-col {
+  margin-top: 2.5rem;
+  order: 2;
+  p {
+    font-size: 1.5rem;
+  }
+}
+.social-media {
+  margin: 1.25rem 0;
+  a {
+    margin-right: 1.6rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: 0.3s linear;
+  }
+  a:hover {
+    color: white;
+  }
+}
+
+.fa-facebook {
+  color: #3b5998;
+}
+.fa-instagram {
+  color: #c13584;
+}
+
+.fa-twitter {
+  color: #00acee;
+}
+
+.fa-youtube {
+  color: #ff0000;
+}
+.fa-linkedin-in {
+  color: #2867b2;
+}
+.border {
+  width: 18rem;
+  height: 0.1rem;
+  background-color: $text-color-light;
+  margin-top: 0.5rem;
+}
+
+@media (min-width: 992px) {
+  aside {
+    grid-column: all-start/all-end;
+    grid-row: aside-start/aside-end;
+  }
+}
+
+@media (min-width: 1200px) {
+  aside {
+    grid-column: aside-start/aside-end;
+    grid-row: 2 /3;
+  }
+}

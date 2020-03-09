@@ -1,0 +1,24 @@
+.banner {
+  width: 100%;
+  height: 100vh;
+  padding: 3rem;
+  position: relative;
+  @include boxShadow($text-color-light);
+  &__content {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 100;
+    h2 {
+      position: relative;
+      line-height: 4.5rem;
+      letter-spacing: 0.5rem;
+      font-size: 4.5rem;
+      font-weight: 100;
+      margin-bottom: 2.3rem;
+      color: $text-color-light;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+@mixin flexCenter($direction) {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  flex-direction: $direction;
+}
+
+@mixin boxShadow($color) {
+  box-shadow: 0 2px 2px rgba($color, 0.3);
+}
+@mixin textShadow($color) {
+  text-shadow: 2px 2px 0 rgba($color, 0.3);
+}

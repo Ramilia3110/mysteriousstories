@@ -1,0 +1,47 @@
+.forum {
+  position: relative;
+  width: 69rem;
+  @include flexCenter(row);
+  flex-wrap: wrap;
+  margin: 1.25rem;
+  &__box {
+    position: relative;
+    @include flexCenter(column);
+    width: 100%;
+    height: auto;
+    padding: 1.9rem 1.25rem;
+    margin: 1.25rem;
+    box-shadow: 3px 3px 5px 3px rgba($text-color-light, 0.5);
+    border-radius: 0.5rem;
+  }
+  &__content {
+    padding: 1.9rem;
+    text-align: center;
+    p {
+      padding: 1.25rem 0;
+    }
+    h3 {
+      color: $text-color-light;
+      text-transform: uppercase;
+      font-size: 1rem;
+      letter-spacing: 1px;
+      font-weight: 600;
+    }
+  }
+  &__icon {
+    max-width: 7rem;
+    color: $text-color-light;
+  }
+  &__user {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+  }
+}
+@media (min-width: 992px) {
+  .forum__box {
+    width: 20rem;
+    height: 26.3;
+    justify-content: space-between;
+  }
+}
