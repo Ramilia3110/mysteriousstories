@@ -1,7 +1,7 @@
 .aside-container {
   max-width: 82rem;
   margin: 1.5rem auto;
-  padding: 0 1.25rem;
+  padding: 0 0.25rem;
   display: flex;
   justify-content: space-around;
   align-items: start;
@@ -104,6 +104,6 @@
 @media (min-width: 1200px) {
   aside {
     grid-column: aside-start/aside-end;
-    grid-row: 2 /3;
+    grid-row: 2 / span 2;
   }
 }
