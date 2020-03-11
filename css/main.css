@@ -417,7 +417,7 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
   height: 80vh;
-  padding: 5rem 1rem;
+  padding: 5rem 5rem;
   border-radius: 3rem;
   max-width: 100vw;
 }
