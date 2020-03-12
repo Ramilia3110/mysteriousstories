@@ -64,3 +64,17 @@
     order: 1;
   }
 }
+
+@media (min-width: 992px) {
+  .article {
+    @include flexCenter(row);
+    padding-bottom: 5rem;
+    padding-left: 1rem;
+    &__img {
+      width: 100%;
+    }
+    &__content {
+      padding: 0 1rem;
+    }
+  }
+}

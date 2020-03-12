@@ -1,9 +1,10 @@
 .banner {
-  width: 100%;
+  width: 90%;
   height: 100vh;
+  margin: 0 auto;
   padding: 3rem;
   position: relative;
-  @include boxShadow($text-color-light);
+
   &__content {
     text-align: center;
     position: absolute;
