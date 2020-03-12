@@ -23,7 +23,8 @@ body {
   color: $text-color-dark;
 }
 .container {
-  margin-top: 0;
+  width: 100vw;
+  overflow: hidden;
 }
 
 @media (min-width: 992px) {
