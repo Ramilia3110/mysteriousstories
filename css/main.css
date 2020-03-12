@@ -39,12 +39,12 @@
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: end;
-  margin: 12rem 0.5rem;
+  margin: 12rem auto;
   text-align: center;
 }
 
 .header__content--title {
-  font-size: 5rem;
+  font-size: 4.1rem;
   line-height: 4.2rem;
   font-weight: 100;
   padding-bottom: 1.5rem;
