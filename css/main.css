@@ -45,7 +45,7 @@
 
 .header__content--title {
   font-size: 3.5rem;
-  line-height: 4.2rem;
+  line-height: 3.5rem;
   font-weight: 100;
   padding-bottom: 1.5rem;
   letter-spacing: 0.8rem;
@@ -55,7 +55,8 @@
 }
 
 .header__content--paragraph {
-  font-size: 1.2rem;
+  font-size: 1rem;
+  padding: 0 auto;
 }
 
 .header--light-mode {
@@ -68,24 +69,11 @@
 }
 
 @media (min-width: 992px) {
-  .header__content {
-    height: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    line-height: 2.2rem;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: end;
-    margin: 12rem auto;
-    text-align: center;
-  }
   .header__content--title {
-    font-size: 5rem;
+    font-size: 4rem;
+  }
+  .header__content--paragraph {
+    font-size: 1.5rem;
   }
 }
 
@@ -524,7 +512,7 @@ body {
   position: relative;
   line-height: 4.5rem;
   letter-spacing: 0.5rem;
-  font-size: 4.5rem;
+  font-size: 3.5rem;
   font-weight: 100;
   margin-bottom: 2.3rem;
   color: #b58b2a;
